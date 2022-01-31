@@ -19,7 +19,7 @@ public class Main {
             }
             System.out.println();
 
-        }
+        }int n = 0, l =0, m=0;
         for (k=1;k<=n;k++)
         {
             for (l =1 ; l <=k; l++)//döngümüz ile baklava diliminin alt kısımının sol tarafındaki boşlukları belirtiyoruz.
