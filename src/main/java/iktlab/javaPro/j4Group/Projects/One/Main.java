@@ -5,21 +5,42 @@
 
 package iktlab.javaPro.j4Group.Projects.One;
 
+import jdk.nashorn.internal.objects.Global;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
-    public Main() {
-    }
 
     public static void main(String[] args) {
-        Human father = new Human("Taleh", "Ustayev", (short) 1970);
-        Human mother = new Human("Xeyale", "Ustayev", (short) 1975);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter value: ");
 
-        Family family = new Family(father, mother);
-        System.out.println(family);
-        family.addChild(new Human("Cavid", "Ustayev", (short) 1999));
-        System.out.println(family);
-        Human child = new Human("Gunay", "Ustayev", (short) 2003);
-        family.deleteChild(child);
-        // family.deleteChild(0);
-        System.out.println(family);
+
+        String ac = sc.nextLine();
+        ac = ac.toLowerCase();
+        char[] charArray = ac.toCharArray();
+        Arrays.sort(charArray);
+        System.out.println(new String(charArray));
+
+
     }
-}
+
+
+
+
+
+
+    public Character[] toCharacterArray( String ac ) {
+        int a = ac.length();
+
+
+        int len = ac.length();
+        Character[] array = new Character[a];
+        for (int i = 0; i < a ; i++) {
+
+            array[i] = ac.charAt(i);
+        }
+
+        return array;
+    }}
